@@ -1,9 +1,14 @@
 import React from 'react';
+import Affordable from '../Affordable/Affordable';
+import Carousel from '../Carousel/Carousel';
+import Category from '../Category/Category';
 
 const Home = () => {
     return (
         <div>
-            <h2>This is Home</h2>
+            <Carousel></Carousel>
+           <Affordable></Affordable>
+           <Category></Category>
         </div>
     );
 };
