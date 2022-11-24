@@ -6,6 +6,7 @@ const Category = () => {
         {
             id : 1,
             name : '3G Phone',
+            describe : 'If you want 3G phone',
             img: 'https://thumbs.dreamstime.com/z/logo-de-la-technologie-du-sans-fil-g-53001725.jpg',
             
 
@@ -13,6 +14,7 @@ const Category = () => {
         {
             id : 2,
             name : '4G Phone',
+            describe : 'If you want 3G phone',
             img: 'https://img.freepik.com/premium-photo/4g-icon_104576-129.jpg?w=2000',
 
 
@@ -20,6 +22,7 @@ const Category = () => {
         {
             id : 3,
             name : '5G Phone',
+            describe : 'If you want 3G phone',
             img: 'https://www.shutterstock.com/image-vector/5g-symbol-internet-vector-technology-260nw-1389387017.jpg',
 
 
