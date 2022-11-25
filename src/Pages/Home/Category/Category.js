@@ -5,7 +5,7 @@ const Category = () => {
     const categoryData = [
         {
             id : 1,
-            name : '3G Phone',
+            category : '3G',
             describe : 'If you want 3G phone',
             img: 'https://thumbs.dreamstime.com/z/logo-de-la-technologie-du-sans-fil-g-53001725.jpg',
             
@@ -13,7 +13,7 @@ const Category = () => {
         },
         {
             id : 2,
-            name : '4G Phone',
+            category : '4G',
             describe : 'If you want 3G phone',
             img: 'https://img.freepik.com/premium-photo/4g-icon_104576-129.jpg?w=2000',
 
@@ -21,7 +21,7 @@ const Category = () => {
         },
         {
             id : 3,
-            name : '5G Phone',
+            category : '5G',
             describe : 'If you want 3G phone',
             img: 'https://www.shutterstock.com/image-vector/5g-symbol-internet-vector-technology-260nw-1389387017.jpg',
 
@@ -33,9 +33,9 @@ const Category = () => {
             <h2 className='text-4xl text-center'>Phone Category</h2>
             <div className='grid mt-8 gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
             {
-               categoryData.map((category)=> <CategoryCard
-               key={category.id}
-               category = {category}
+               categoryData.map((categori)=> <CategoryCard
+               key={categori.id}
+               categori = {categori}
                ></CategoryCard>) 
             }
 

@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const CategoryCard = ({category}) => {
-    const {name,img, describe,id} = category
+const CategoryCard = ({categori}) => {
+    const { category,img, describe,} = categori
     return (
         <div>
             <div className="card  bg-base-100 shadow-xl">
@@ -9,10 +10,11 @@ const CategoryCard = ({category}) => {
     <img src={img} alt="Shoes" className="rounded-xl h-20" />
   </figure>
   <div className="card-body items-center text-center">
-    <h2 className="card-title">{name}</h2>
+    <h2 className="card-title">Category: {category} Phone</h2>
     <p>{describe}</p>
     <div className="card-actions">
-      <button className="btn btn-primary">See More</button>
+      <Link to={`/category/${category}`}><button className="btn btn-primary">See More</button></Link>
+      
     </div>
   </div>
 </div>
