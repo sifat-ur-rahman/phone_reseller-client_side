@@ -12,13 +12,13 @@ const SignUp = () => {
     const {register, formState:{errors}, handleSubmit } = useForm();
     const [createdUserEmail, setCreatedUserEmail] = useState('')
     // const [token] = useToken(createdUserEmail) 
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
 
     // if(token){
     //     navigate('/')
     // }
     const handleSignUp = (data) =>{
-        console.log(data);
+        console.log(data.role);
         setSignUpError('');
         createUser(data.email, data.password)
         .then(result => {
@@ -26,11 +26,12 @@ const SignUp = () => {
             console.log(user);
             toast("User created SuccessFully.")
             const userInfo = {
-                displayName: data.name
+                displayName: data.name,
+               
             }
             updateUser(userInfo)
             .then(()=>{
-                saveUser(data.name, data.email )
+                saveUser(data.name, data.email, data.role )
                
             })
             .catch(err => console.error(err))
@@ -41,8 +42,9 @@ const SignUp = () => {
         })
     }
 
-    const saveUser = (name, email) =>{
-        const user = {name, email};
+    const saveUser = (name, email, role) =>{
+        const user = {name, email,role };
+        console.log('saveUser',name, email,role);
         fetch('http://localhost:5000/users', {
             method: 'POST',
             headers: {
@@ -53,6 +55,7 @@ const SignUp = () => {
         .then(res => res.json())
         .then(data => {
             // getUserToken(email)
+            navigate('/')
             setCreatedUserEmail(email)
         })
     }
@@ -93,6 +96,14 @@ const SignUp = () => {
                  {errors.password && <p className='text-red-600'>{errors.password?.message}</p>}
                 
             </div>
+            <label className="label">
+                     <span className="label-text">Role</span>
+                </label>
+            <select {...register("role")}  className="select select-info w-full ">
+       
+        <option>Buyer</option>
+        <option>Seller</option>
+</select>
 
             
                 <input className='btn btn-accent w-full mt-5' value = 'Sign Up' type="submit" />

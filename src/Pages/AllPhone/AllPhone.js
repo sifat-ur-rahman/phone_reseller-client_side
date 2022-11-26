@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import AllPhoneCard from './AllPhoneCard';
+import BuyModal from '../BuyModal/BuyModal'
+
 
 const AllPhone = () => {
     const phone = useLoaderData()
+    const [modelData, setModelData] = useState(null)
     // console.log(phone);
     return (
         <div className='mt-8 mb-8'>
@@ -13,9 +16,17 @@ const AllPhone = () => {
                 phone.map(phoneData=> <AllPhoneCard
                 key={phoneData._id}
                 phoneData={phoneData}
+                setModelData = {setModelData}
                 ></AllPhoneCard>)
             }
             </div>
+
+            {
+            modelData &&
+            <BuyModal
+            modelData={modelData}
+            setModelData= {setModelData}
+            ></BuyModal> }
            
         </div>
     );

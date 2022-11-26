@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AllPhoneCard = ({phoneData}) => {
+const AllPhoneCard = ({phoneData, setModelData}) => {
     const {img, name, category, originalPrice, resalePrice, use} = phoneData
     return (
         <div>
@@ -13,7 +13,8 @@ const AllPhoneCard = ({phoneData}) => {
     <p>Resale price: {resalePrice}</p>
     <p>Use: {use} years</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+    
+      <label onClick={()=>setModelData(phoneData)}  htmlFor="booking-modal" className="btn btn-primary text-white"> Buy Now</label>
     </div>
   </div>
 </div>
