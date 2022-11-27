@@ -9,6 +9,7 @@ import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import MyBooking from "../../Pages/MyBooking/MyBooking";
 import MyOrders from "../../Pages/MyOrders/MyOrders";
+import ReportedItems from "../../Pages/ReportedItems/ReportedItems";
 import SignUp from "../../Pages/SignUp/SignUp";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
                 path: '/dashboard/allBuyers',
                 element: <AllBuyers></AllBuyers>
 
+            },
+            {
+                path: '/dashboard/reportedItems',
+                element: <ReportedItems></ReportedItems>
             }
         ]
 
