@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
+import { AuthContext } from '../../Contexts/AuthProvider';
 
 const AddProduct = () => {
+    const {user} = useContext(AuthContext)
     const {register, formState:{errors}, handleSubmit } = useForm();
 
     const handleAddProduct = data =>{
@@ -24,7 +26,8 @@ const AddProduct = () => {
                 resalePrice: data.resale,
                 category: data.category,
                 img: imgData.data.url,
-                use: data.use
+                use: data.use,
+                email: user.email
 
             }
             console.log(product);
