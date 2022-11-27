@@ -11,12 +11,10 @@ const SignUp = () => {
     const [signUpError, setSignUpError] = useState('')
     const {register, formState:{errors}, handleSubmit } = useForm();
     const [createdUserEmail, setCreatedUserEmail] = useState('')
-    // const [token] = useToken(createdUserEmail) 
+     
     const navigate = useNavigate()
 
-    // if(token){
-    //     navigate('/')
-    // }
+    
     const handleSignUp = (data) =>{
         // console.log(data.role);
         setSignUpError('');
