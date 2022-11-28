@@ -43,7 +43,7 @@ const SignUp = () => {
     const saveUser = (name, email, role) =>{
         const user = {name, email,role };
         console.log('saveUser',name, email,role);
-        fetch('http://localhost:5000/users', {
+        fetch('https://phone-server-side.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -111,8 +111,7 @@ const SignUp = () => {
                 }
          </form>
          <p>Already have an account <Link className='text-secondary mt-5' to={'/login'}>Please Login</Link></p>
-         <div className="divider">OR</div>
-         <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
+         
             </div>
         </div>
     );

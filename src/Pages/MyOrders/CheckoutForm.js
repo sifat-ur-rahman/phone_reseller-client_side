@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import {useStripe, CardElement, useElements, PaymentElement} from '@stripe/react-stripe-js'
+import {useStripe, CardElement, useElements, } from '@stripe/react-stripe-js'
 
 
 const CheckoutForm = ({data}) => {
@@ -16,7 +16,7 @@ const CheckoutForm = ({data}) => {
 
     useEffect(() => {
         
-        fetch("http://localhost:5000/create-payment-intent", {
+        fetch("https://phone-server-side.vercel.app/create-payment-intent", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ resalePrice }),
@@ -73,7 +73,7 @@ const CheckoutForm = ({data}) => {
                 bookingId: _id
 
             }
-            fetch('http://localhost:5000/payments',{
+            fetch('https://phone-server-side.vercel.app/payments',{
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payment)

@@ -7,7 +7,7 @@ const Category = () => {
             id : 1,
             category : '3G',
             describe : 'If you want 3G phone',
-            img: 'https://thumbs.dreamstime.com/z/logo-de-la-technologie-du-sans-fil-g-53001725.jpg',
+            img: 'https://uidesign.gbtcdn.com/gb_blog/2843/3G-smartfon.png',
             
 
         },

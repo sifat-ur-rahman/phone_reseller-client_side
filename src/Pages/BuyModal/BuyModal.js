@@ -33,7 +33,7 @@ const BuyModal = ( {modelData, setModelData}) => {
         }
 
         console.log(booking);
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://phone-server-side.vercel.app/bookings', {
           method: 'POST',
           headers: {
             'content-type': 'application/json'

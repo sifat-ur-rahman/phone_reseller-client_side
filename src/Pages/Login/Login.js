@@ -4,23 +4,21 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
 
 
-// import useToken from '../../Hooks/UseToken';
+
 
 const Login = () => {
     const {register, formState:{errors}, handleSubmit } = useForm()
     const {signIn} = useContext(AuthContext)
     const [loginError, SetLoginError] = useState('')
     const [loginUserEmail, setLoginUserEmail] = useState('')
-    // const [token] = useToken(loginUserEmail)
+    
     const location = useLocation()
     const navigate = useNavigate()
 
     const from = location.state?.from?.pathname || '/'
 
 
-    // if(token){
-    //     
-    // }
+    
 
     const handleLogin = data =>{
         console.log(data);
@@ -75,8 +73,7 @@ const Login = () => {
                 {loginError && <p className='text-red-500'>{loginError}</p>}
          </form>
          <p>New to Doctors Portal? <Link className='text-secondary mt-5' to={'/signup'}>Create new account</Link></p>
-         <div className="divider">OR</div>
-         <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
+         
             </div>
         </div>
     );
