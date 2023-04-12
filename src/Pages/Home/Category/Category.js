@@ -7,7 +7,7 @@ const Category = () => {
             id : 1,
             category : '3G',
             describe : 'If you want 3G phone',
-            img: 'https://uidesign.gbtcdn.com/gb_blog/2843/3G-smartfon.png',
+            img: 'https://i.ibb.co/BLHZ7L1/images.jpg',
             
 
         },
@@ -15,7 +15,7 @@ const Category = () => {
             id : 2,
             category : '4G',
             describe : 'If you want 3G phone',
-            img: 'https://img.freepik.com/premium-photo/4g-icon_104576-129.jpg?w=2000',
+            img: 'https://i.ibb.co/fv2m3Lb/images-1.jpg',
 
 
         },
@@ -23,15 +23,15 @@ const Category = () => {
             id : 3,
             category : '5G',
             describe : 'If you want 3G phone',
-            img: 'https://www.shutterstock.com/image-vector/5g-symbol-internet-vector-technology-260nw-1389387017.jpg',
+            img: 'https://i.ibb.co/PC9Mr4s/images-2.jpg',
 
 
         }
     ]
     return (
         <div className='mt-16 mb-8'>
-            <h2 className='text-4xl text-center'>Phone Category</h2>
-            <div className='grid mt-8 gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+            <h2 className='text-4xl font-extrabold  text-center'>Phone Category</h2>
+            <div className='grid mx-8 my-8 gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
             {
                categoryData.map((categori)=> <CategoryCard
                key={categori.id}

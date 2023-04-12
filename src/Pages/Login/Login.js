@@ -40,9 +40,34 @@ const Login = () => {
 
 
     return (
-        <div className='h-[800px] flex justify-center items-center' >
+        <div >
+            <span className='grid justify-end  m-4'>
+            <div className="collapse rounded-lg bg-slate-100 justify-end">
+  <input type="checkbox" />
+  <div className="collapse-title text-xl font-medium">
+    Email & Password 
+  </div>
+  <div className="collapse-content">
+    <p>Buyer</p>
+    <p>Email    : <span>phone_resale_buyer@gmail.com</span> </p>
+    <p>Password : <span>buyer123456</span> </p>
+    <hr className="border-spacing-2 border-blue-500 cursor-pointer hover:border-red-500 duration-500" />
+    <p>Seller</p>
+    <p>Email    : <span>phone_resale_seller@gmail.com</span> </p>
+    <p>Password : <span>seller123456</span> </p>
+    <hr className="border-spacing-2 border-blue-500 cursor-pointer hover:border-red-500 duration-500" />
+    <p>Admin</p>
+    <p>Email    : <span>abc@gmail.com</span> </p>
+    <p>Password : <span>123456</span> </p>
+    <hr className='font-bold' />
+  </div>
+</div>
+            </span>
+            <div className='h-[800px] flex justify-center items-center' >
+                
+            
             <div className='w-96 p-7'>
-                <h2 className='text-xl text-center'>Login</h2>
+                <h2 className='text-4xl text-center'>Login</h2>
             <form onSubmit={handleSubmit(handleLogin)}>
      
             <div className="form-control w-full max-w-xs">
@@ -72,8 +97,9 @@ const Login = () => {
 
                 {loginError && <p className='text-red-500'>{loginError}</p>}
          </form>
-         <p>New to Doctors Portal? <Link className='text-secondary mt-5' to={'/signup'}>Create new account</Link></p>
+         <p>New to Phone Resale? <Link className='text-secondary mt-5' to={'/signup'}>Create new account</Link></p>
          
+            </div>
             </div>
         </div>
     );
