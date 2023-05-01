@@ -1,5 +1,6 @@
+# phone reseller
 link: https://phone-reseller-1a73e.web.app/
-
+## Admin info 
 admin: abc@gmail.com
 pass: 123456
 
