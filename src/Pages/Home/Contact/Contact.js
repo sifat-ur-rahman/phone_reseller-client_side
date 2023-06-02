@@ -32,7 +32,7 @@ const Contact = () => {
         </div>
         </div>
         <div className='flex justify-center py-4'>
-        <button className='btn btn-active btn-primary'>Submit</button>
+        <button className='btn btn-outline btn-primary px-16 text-xl font-bold rounded-full'>Submit</button>
         </div>
             
         </div>

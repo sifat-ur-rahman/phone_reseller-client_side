@@ -5,7 +5,7 @@ const CategoryCard = ({categori}) => {
     const { category,img, describe,} = categori
     return (
         <div>
-            <div className="card  bg-base-100 shadow-xl">
+            <div className="card border border-gray-100 hover:border-cyan-600 transition duration-300 ease-in-out  shadow-xl">
   <figure className="">
     <img src={img} alt="Shoes" className="rounded-xl w-50 h-60" />
   </figure>
@@ -13,7 +13,7 @@ const CategoryCard = ({categori}) => {
     <h2 className="card-title">Category: {category} Phone</h2>
     <p>{describe}</p>
     <div className="card-actions">
-      <Link to={`/category/${category}`}><button className="btn btn-primary">See More</button></Link>
+      <Link to={`/category/${category}`}><button className="btn btn-outline btn-primary px-16 text-xl font-bold rounded-full">See More</button></Link>
       
     </div>
   </div>

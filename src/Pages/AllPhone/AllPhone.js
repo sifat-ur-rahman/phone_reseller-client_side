@@ -9,7 +9,7 @@ const AllPhone = () => {
     const [modelData, setModelData] = useState(null)
     // console.log(phone);
     return (
-        <div className='mt-8 mb-8'>
+        <div className='mt-8 mx-16 mb-8'>
             <h2 className='text-4xl text-center'>This is {phone.length} phone</h2>
             <div className='grid mt-8 gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
             {

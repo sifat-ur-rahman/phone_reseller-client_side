@@ -71,7 +71,7 @@ const BuyModal = ( {modelData, setModelData}) => {
     <input name='email'readOnly defaultValue={user?.email} type="email" placeholder="Email Address" className="input input-bordered input-info w-full " />
     <input name='phone' type="text" placeholder="Phone Number" className="input input-bordered input-info w-full " />
     <br />
-    <input className='btn btn-accent w-full ' type="submit" value="Submit" />
+    <input className='btn btn-accent btn-outline  px-16 text-xl font-bold rounded-full w-full ' type="submit" value="Submit" />
 
     </form>
   </div>
