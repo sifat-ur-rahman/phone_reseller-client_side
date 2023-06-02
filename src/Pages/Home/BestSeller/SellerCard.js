@@ -5,7 +5,7 @@ const SellerCard = ({person}) => {
         const { name,img } = person
     return (
         <div>
-            <div className="card  bg-base-100 shadow-xl">
+            <div className="card border border-gray-100 hover:border-cyan-600 transition duration-300 ease-in-out  bg-base-100 shadow-xl">
   <figure className="">
     <img src={img} alt="" className="rounded-xl w-50 h-60" />
   </figure>
