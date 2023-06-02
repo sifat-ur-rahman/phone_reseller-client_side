@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Contexts/AuthProvider';
 
 
+
 const Navbar = () => {
   const {user, logOut} = useContext(AuthContext)
     const handleLogOut = ()=>{
@@ -35,7 +36,7 @@ const Navbar = () => {
         {menuItems} 
           </ul>
     </div>
-    <Link to='/' className="btn btn-ghost normal-case text-xl">Phone Resale</Link>
+    <Link to='/' ><img src="https://i.ibb.co/cTZJ9GF/Screenshot-37.png" className='w-40' alt="" /></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">
