@@ -7,6 +7,8 @@ import Discount from '../Discount/Discount';
 import Environmental from '../Environmental/Environmental';
 import BestSale from '../BestSale/BestSale';
 import BestSeller from '../BestSeller/BestSeller';
+import FAQ from '../FAQ/FAQ';
+import Capturing from '../Capturing/Capturing';
 
 
 const Home = () => {
@@ -18,7 +20,9 @@ const Home = () => {
            <Category></Category>
            <Environmental></Environmental>
            <BestSale></BestSale>
+           <Capturing></Capturing>
            <BestSeller></BestSeller>
+           <FAQ></FAQ>
            <Contact></Contact>
         </div>
     );
