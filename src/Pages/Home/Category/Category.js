@@ -14,7 +14,7 @@ const Category = () => {
         {
             id : 2,
             category : '4G',
-            describe : 'If you want 3G phone',
+            describe : 'If you want 4G phone',
             img: 'https://i.ibb.co/fv2m3Lb/images-1.jpg',
 
 
@@ -22,7 +22,7 @@ const Category = () => {
         {
             id : 3,
             category : '5G',
-            describe : 'If you want 3G phone',
+            describe : 'If you want 5G phone',
             img: 'https://i.ibb.co/PC9Mr4s/images-2.jpg',
 
 
