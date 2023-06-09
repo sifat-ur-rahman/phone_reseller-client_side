@@ -9,6 +9,8 @@ import BestSale from '../BestSale/BestSale';
 import BestSeller from '../BestSeller/BestSeller';
 import FAQ from '../FAQ/FAQ';
 import Capturing from '../Capturing/Capturing';
+import Advertise from '../Advertise/Advertise';
+import Captivating from '../Captivating/Captivating';
 
 
 const Home = () => {
@@ -17,12 +19,14 @@ const Home = () => {
             <Carousel></Carousel>
            <Affordable></Affordable>
            <Discount></Discount>
+           <Captivating></Captivating>
            <Category></Category>
            <Environmental></Environmental>
            <BestSale></BestSale>
            <Capturing></Capturing>
            <BestSeller></BestSeller>
            <FAQ></FAQ>
+           <Advertise></Advertise>
            <Contact></Contact>
         </div>
     );
