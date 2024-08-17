@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
       </footer>
       <hr className="mt-5" />
-      <p className="text-center mt-2">
+      <p className="text-center mt-2 text-white">
         © Phone Resale Ltd. 2024 | All Rights Reserved
       </p>
     </div>
