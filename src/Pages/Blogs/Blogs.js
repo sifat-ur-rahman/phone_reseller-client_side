@@ -3,7 +3,7 @@ import React from "react";
 const Blogs = () => {
   return (
     <div>
-      <div className="ml-5 mr-5 rounded  p-4 mb-5">
+      <div className="ml-5 border border-blue-300 mr-5 rounded-xl  p-4 mb-5">
         <h4 className="text-xl">
           {" "}
           What are the different ways to manage a state in a React application?
@@ -16,7 +16,7 @@ const Blogs = () => {
           <br /> 4.URL state
         </p>
       </div>
-      <div className="ml-5 mr-5 rounded  p-4 mb-5">
+      <div className="ml-5 border border-blue-300 mr-5 rounded-xl  p-4 mb-5">
         <h4 className="text-xl"> How does prototypical inheritance work?</h4>
         <p>
           The Prototypal Inheritance is a feature in javascript used to add
@@ -26,7 +26,7 @@ const Blogs = () => {
           we use Object. getPrototypeOf and Object.
         </p>
       </div>
-      <div className="ml-5 mr-5 rounded  p-4 mb-5">
+      <div className="ml-5 border border-blue-300 mr-5 rounded-xl  p-4 mb-5">
         <h4 className="text-xl">Why should we write unit tests?</h4>
         <p>
           Unit testing ensures that all code meets quality standards before it's
@@ -36,7 +36,7 @@ const Blogs = () => {
           better code, more efficiently.
         </p>
       </div>
-      <div className="ml-5 mr-5 rounded  p-4 mb-5">
+      <div className="ml-5 mr-5 rounded-xl border border-blue-300  p-4 mb-5">
         <h4 className="text-xl"> React vs. Angular vs. Vue?</h4>
         <p>
           React can be used as a UI library to render elements, without
