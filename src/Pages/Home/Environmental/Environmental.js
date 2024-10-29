@@ -4,31 +4,22 @@ import img01 from "../../../../src/images/Recycle-Cell-Phones.jpeg";
 const Environmental = () => {
   return (
     <div>
-      <div className="hero min-h-screen mx-auto">
-        <div className="hero-content flex-col lg:flex-row ">
+      <div className="container mx-auto my-16">
+        <div className="grid grid-cols-2 gap-8 items-center">
           <img src={img01} className=" rounded-lg  w-[100%] " alt="" />
           <div>
-            <h1 className="text-5xl font-bold">
-              Sell your old electronics products to reduce environmental
-              pollution!
+            <h1 className="text-3xl font-bold">
+              Sell your old electronics to reduce environmental pollution.
             </h1>
             <ul className="py-6 text-xl">
               <li>
-                Find a reputable buyer for your old electronics to ensure they
-                are properly disposed of or recycled.
+                Find a reputable buyer and erase all personal data for safety.
               </li>
               <li>
-                Before selling, make sure to erase all personal data from your
-                device to protect your privacy.
+                Research prices to get a fair deal and prioritize recycling over
+                disposal.
               </li>
-              <li>
-                Research the value of your old electronics to ensure you get a
-                fair price when selling.
-              </li>
-              <li>
-                Always prioritize selling over throwing away old electronics to
-                minimize environmental pollution.
-              </li>
+              <li>Choose selling over disposal to help the environment.</li>
             </ul>
           </div>
         </div>
