@@ -1,6 +1,5 @@
 import React from "react";
 import img01 from "../../../../src/images/Recycle-Cell-Phones.jpeg";
-import { FaDotCircle } from "react-icons/fa";
 
 const Environmental = () => {
   return (
@@ -14,18 +13,13 @@ const Environmental = () => {
             </h1>
             <ul className="py-6 text-xl">
               <li>
-                <FaDotCircle /> Find a reputable buyer and erase all personal
-                data for safety.
+                Find a reputable buyer and erase all personal data for safety.
               </li>
               <li>
-                <FaDotCircle /> Research prices to get a fair deal and
-                prioritize recycling over disposal.
+                Research prices to get a fair deal and prioritize recycling over
+                disposal.
               </li>
-              <li>
-                {" "}
-                <FaDotCircle /> Choose selling over disposal to help the
-                environment.
-              </li>
+              <li> Choose selling over disposal to help the environment.</li>
             </ul>
           </div>
         </div>
