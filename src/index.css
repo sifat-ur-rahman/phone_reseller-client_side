@@ -14,3 +14,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.imgClass {
+  object-fit: contain;
+  mix-blend-mode: hard-light;
+}

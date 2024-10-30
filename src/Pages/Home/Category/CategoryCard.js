@@ -7,7 +7,11 @@ const CategoryCard = ({ category }) => {
     <div className="container ">
       <div className="card border border-gray-100 hover:border-cyan-600 transition duration-300 ease-in-out  shadow-xl">
         <figure className="">
-          <img src={img} alt="Shoes" className="rounded-xl w-44 mt-3 h-52" />
+          <img
+            src={img}
+            alt="Shoes"
+            className="imgClass  rounded-xl w-44 mt-3 h-52"
+          />
         </figure>
         <div className="p-5 grid items-center justify-center text-center">
           <h2 className="text-2xl font-semibold">
